@@ -30,19 +30,23 @@ const listingSchema = new mongoose.Schema({
   //   url: String
   // },
   image: {
-    filename:{
-      type:String,
-      default:"Filename",
-    },
-    url:{
-    type: String,
-    default:
-      "https://pixabay.com/photos/coast-landscape-nature-ocean-sea-1867704/",
-    set: (v) =>
-      v === ""
-        ? "https://pixabay.com/photos/coast-landscape-nature-ocean-sea-1867704/"
-        : v,
-  }},
+  //   filename:{
+  //     type:String,
+  //     default:"Filename",
+  //   },
+  //   url:{
+  //   type: String,
+  //   default:
+  //     "https://pixabay.com/photos/coast-landscape-nature-ocean-sea-1867704/",
+  //   set: (v) =>
+  //     v === ""
+  //       ? "https://pixabay.com/photos/coast-landscape-nature-ocean-sea-1867704/"
+  //       : v,
+  // }
+
+  url: String,
+  filename: String, 
+},
   price: Number,
   location: String,
   country: String,
